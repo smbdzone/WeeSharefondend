@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weeshre Dashboard</title>
+  <link rel="icon"  type="image/x-icon" href="../assets/img/logo.png">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/dashboard.css">
+  <link rel="stylesheet" href="../assets/css/response.css">
+  <link rel="stylesheet" href="../assets/css/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../assets/lib/aos/aos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="wappan">
+  <aside>
+    <h3 class="text-blue">Dashboard</h3>
+    <img src="../assets/img/WeeShare-Logo-02.png" alt="" class="img-fluid logo">
+
+    <div class="location-dashboard">
+      <img src="../assets/img/dashboard/location.png" alt="" class="img-fluid img-5">
+         <p>Dubia UAE</p>
+    </div>
+
+    <div class="ref-number">
+         <p>Ref. Number</p>
+         <p>31448975</p>
+    </div>
+</aside>
+<div class="main-container">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>  
+          <!-- End Left Element -->
+          <!-- Center Element -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           
+            <ul class="navbar-nav  me-auto mb-2 mb-lg-0 m-auto">
+              <p class="text-blue  " style="margin-top: 10px;"> Schedule To</p>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="../assets/img/icon/Facebook-icno.png" alt="" class="img-fluid social-icon"></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#"><img src="../assets/img/icon/Insta.png" alt="" class="img-fluid social-icon"></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#" ><img src="../assets/img/icon/Twitter.png" alt="" class="img-fluid social-icon"></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="../assets/img/icon/Youtube.png" alt="" class="img-fluid social-icon"></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="../assets/img/icon/Linkedin.png" alt="" class="img-fluid social-icon"> </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="../assets/img/icon/Tiktok.png" alt="" class="img-fluid social-icon"> </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="../assets/img/icon/Google.png" alt="" class="img-fluid social-icon"> </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="../assets/img/icon/pinterest.jpg" alt="" class="img-fluid social-icon"> </a>
+              </li>
+          </ul>
+          </div>
+
+          
+      
+
+      </div>
+    </nav>
+
+    <div id='calendar'></div>
+</div>
+</div>
+  
+
+
+
+
+
+ 
+
+
+  <script src="../assets/js/jquery.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <!-- <script src="../assets/lib/fullcalendar/fullcalendar.min.js"></script>
+  -->
+  <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
+  <!-- <script src="../assets/lib/fullcalendar/calendar.js"></script>  -->
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth'
+      });
+      calendar.render();
+    });
+
+  </script>
+
+
+
+</body>
+
+</html>
